@@ -1,0 +1,46 @@
+.block {
+  padding: 0 $gap-block;
+}
+.block--bg-primary{
+  background-color: $primary;
+  .h2-strong,
+  .block-desc .title-link,
+  .link:hover {
+    color: white!important;
+  }
+  .arrow, .arrow:before, .arrow:after{ background-color: white; }
+}
+.container {
+  position: relative;
+}
+
+.block .container .content {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.left-mail {
+  transform: rotate(-90deg);
+  position: fixed;
+  left: -77px;
+  top: 50%;
+  a {
+    color: $secondary;
+  }
+}
+
+.right-phone {
+  transform: rotate(90deg);
+  position: fixed;
+  right: -30px;
+  top: 50%;
+  a {
+    color: $secondary;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrap.container {
+    margin: $gap-general-large;
+  }
+}

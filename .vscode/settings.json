@@ -1,0 +1,21 @@
+{
+    "files.exclude": {
+        ".cache-loader": true,
+        ".github": true,
+        ".vscode": true,
+        "node_modules": true,
+        "vendor": true,
+        ".editorconfig": true,
+        ".gitattributes": true,
+        ".gitignore": true,
+        ".travis.yml": true,
+        "CHANGELOG.md": true,
+        "composer.json": true,
+        "composer.lock": true,
+        "LICENSE.md": true,
+        "phpcs.xml": true,
+        "yarn.lock": true,
+        "dist": true
+    },
+    "editor.tabSize": 2
+}

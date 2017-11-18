@@ -1,0 +1,95 @@
+.arrow {
+  background-color: $primary;
+  vertical-align: middle;
+  transition: all 300ms;
+  position: relative;
+  display: inline-block;
+  &::after,
+  &::before {
+    background-color: $primary;
+    transition: all 300ms;
+    content: '';
+    position: absolute;
+  }
+}
+
+// DOWN
+.arrow-right {
+  width: 15px;
+  height: 1px;
+  margin-right: 15px;
+  &::after,
+  &::before {
+    width: 1px;
+    height: 6px;
+    bottom: -4px;
+  }
+  &:before {
+    top: 0px;
+    right: 2px;
+    transform: rotate(45deg);
+  }
+  &:after {
+    right: 2px;
+    bottom: 0px;
+    transform: rotate(-45deg);
+  }
+}
+// DOWN
+.arrow-down {
+  width: 1px;
+  height: 15px;
+  &::after,
+  &::before {
+    width: 1px;
+    height: 6px;
+    right: -4px;
+  }
+  &:before {
+    left: 2px;
+    bottom: -1px;
+    transform: rotate(45deg);
+  }
+  &:after {
+    right: 2px;
+    bottom: -1px;
+    transform: rotate(-45deg);
+  }
+}
+
+.btn.white {
+  &:hover {
+    .arrow {
+      background: white;
+      &:after,
+      &::before {
+        background: white;
+      }
+    }
+  }
+  .arrow {
+    background: $primary;
+    &:after,
+    &::before {
+      background: $primary;
+    }
+  }
+}
+.btn.primary {
+  &:hover {
+    .arrow {
+      background: white;
+      &:after,
+      &::before {
+        background: white;
+      }
+    }
+  }
+  .arrow {
+    background: white;
+    &:after,
+    &::before {
+      background: white;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.bulle {
+  font-weight: 900;
+  font-size: 24px;
+  background-color: white;
+  color: $primary;
+  position: absolute;
+  top: -20px;
+  width: fit-content;
+  left: 80%;
+  padding: 10px 25px;
+  border-radius: 15px;
+  filter: drop-shadow(5px 3px 6px rgba(0,0,0,0.2));
+  &:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    left: 0px;
+    bottom: -11px;
+    width: 26px;
+    height: 35px;
+    background-image: url(/wex-wp/wp-content/themes/wex/dist/images/pointe-bulle.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+}
