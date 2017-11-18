@@ -3,14 +3,18 @@
 --}}
 @extends('layouts.app')
 @section('content')
-  {{-- 
 
-    -- block1
 
-  --}}
-  <section class="block">
-    <div class="container">
-    <h1>Spoutnik</h1>
-    </div>
-  </section>
+<section class="block">
+  <div class="container">
+    <p><?php echo get_field('accueil_amorce'); ?></p>
+    <h1>
+      <?php echo get_field('accueil_accroche'); ?>
+    </h1>
+    <p><?php echo get_field('accueil_texte'); ?></p>
+  </div>
+</section>
+
+
+
 @endsection

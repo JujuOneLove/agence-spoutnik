@@ -1,15 +1,21 @@
-<?php
-  $menu_name = 'main-menu';
-  $locations = get_nav_menu_locations();
-  $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
-  $menuitems = wp_get_nav_menu_items( $menu->term_id, array( 'order' => 'DESC' ) );
-  var_dump($locations)
-?>
+<nav class="primary-nav">
 
-<nav class="{{ $menu_name }}">
-    <ul class="menu">
-        @foreach ($menuitems as $nav)
-            <li class="link"> <a href="{{ $nav->url }}">{{ $nav->title }}</a></li>
-        @endforeach
-    </ul>
+<div class="primary-nav__logo">
+  <a href="<?= esc_url( home_url( '/' ) ); ?>">
+    LOGO
+  </a>
+</div>
+
+<?php
+  $args = array(
+    'menu'            => 'main-menu',
+    'container'       => false,
+    'container_class' => false,
+    'container_id'    => false,
+    'menu_class'      => 'primary-nav__list',//animsition-link
+    'menu_id'         => 'js--primary-nav',
+    'depth'           => 3
+  );
+  wp_nav_menu($args);
+?>
 </nav>

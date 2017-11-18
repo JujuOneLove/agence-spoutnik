@@ -90,3 +90,31 @@ Container::getInstance()
             'view' => require dirname(__DIR__).'/config/view.php',
         ]);
     }, true);
+
+
+function register_my_cpts() {
+    
+    $labels = array(
+    "name"          => "Projets",
+    "singular_name" => "Projet",
+    );
+    $args = array(
+    "labels"              => $labels,
+    "description"         => "",
+    "public"              => true,
+    "show_ui"             => true,
+    "has_archive"         => false,
+    "show_in_menu"        => true,
+    "exclude_from_search" => false,
+    "capability_type"     => "post",
+    "map_meta_cap"        => true,
+    "hierarchical"        => false,
+    "rewrite"             => array( "slug" => "projets", "with_front" => true ),
+    "query_var"           => true,
+    "supports"            => array( "title", "editor", "excerpt", "thumbnail" )
+    );
+    register_post_type( "projets", $args );
+
+}
+
+add_action( 'init', 'register_my_cpts' );
