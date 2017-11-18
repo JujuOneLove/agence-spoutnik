@@ -2,10 +2,9 @@
 
 <div class="primary-nav__logo">
   <a href="<?= esc_url( home_url( '/' ) ); ?>">
-
+    LOGO
   </a>
 </div>
-
 
 <?php
   $args = array(
