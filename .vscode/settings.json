@@ -7,7 +7,7 @@
         "vendor": true,
         ".editorconfig": true,
         ".gitattributes": true,
-        ".gitignore": true,
+        ".gitignore": false,
         ".travis.yml": true,
         "CHANGELOG.md": true,
         "composer.json": true,
