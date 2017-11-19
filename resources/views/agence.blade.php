@@ -1,5 +1,5 @@
 {{--
-  Template Name: rejoignez-nous
+  Template Name: agence
 --}}
 
 @extends('layouts.app')

@@ -2,9 +2,8 @@
   Template Name: Home
 --}}
 @extends('layouts.app')
+
 @section('content')
-
-
 <section class="block">
   <div class="container">
     <p><?php echo get_field('accueil_amorce'); ?></p>
@@ -14,7 +13,4 @@
     <p><?php echo get_field('accueil_texte'); ?></p>
   </div>
 </section>
-
-
-
 @endsection
