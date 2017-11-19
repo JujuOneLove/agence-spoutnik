@@ -5,9 +5,9 @@
 @extends('layouts.app')
 @include('partials.page-header')
 @section('content')
-<section class="block">
-  <div class="container">
-    <div class="xplication">
+<section >
+  <div class="block">
+    <div class="explication">
       <p><?php the_field('contact-texte'); ?></p>
     </div>
     <?php
@@ -20,7 +20,7 @@
               $info=get_sub_field('contact-info');
     ?>
     <div class="info">
-      <img src="<?php echo $img['url']; ?>">
+      <img src="<?php echo $img['url']; ?>" alt="Information">
       <p><?php echo $info; ?></p>
     </div>
 
