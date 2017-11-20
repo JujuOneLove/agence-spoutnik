@@ -4,7 +4,7 @@
   <body @php(body_class())>
     @php(do_action('get_header'))
     @include('partials.header')
-    <main class="main" role="document">
+    <main role="document">
         @yield('content')
         @if (App\display_sidebar())
           <aside class="sidebar">
