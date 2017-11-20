@@ -1,5 +1,62 @@
 .agence_container {
     margin-left: 150px;
     margin-right: 150px;
-    color: pink;
 }
+
+#agence_NosMetiersContent {
+    text-align: center;
+}
+
+.headlineBlack {
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.paddingP {
+    width: 750px;
+    margin: 0 auto;
+    margin-bottom: 50px;    
+}
+
+.imgContainer {
+    width: 200px;
+    height: auto;
+    position: relative;
+    margin: 15px;
+    background: $color-vert;
+}
+.imgContainer img{
+    opacity: 0.3;
+}
+
+.imgContainer p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.3rem;
+    color: #fff;
+}
+.agence_square {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#EquipeContent {
+    background: $light-grey;
+    height: 100vh;
+    position: relative;
+}
+
+.agence_leftBlock {
+    background: #fff;
+    position: absolute;
+    left: 75px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 400px;
+    padding: 75px;
+}
+

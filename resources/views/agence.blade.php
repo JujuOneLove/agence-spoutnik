@@ -7,8 +7,11 @@
 @section('content')
   <div class="agence_container">
     <div id="agence_NosMetiersContent">
-        <h2> <?php the_field(agence_title);  ?> </h2>
-        <p> <?php the_field(agence_soustitre); ?> </p>
+        <h2 class="headlineBlack"> <?php the_field('agence_title');  ?> </h2>
+        <div class="paddingP"> <?php the_field('agence_soustitre'); ?> </div>
+
+
+<div class="agence_square">
 
         <?php
         // check if the repeater field has rows of data
@@ -20,22 +23,24 @@
                 $text=get_sub_field('square_texte');
       ?>
 
-      <div class="agence_square">
-        <img src="<?php echo $img['url']; ?>" alt="backgroundImg">
-        <p> <?php echo $text ?> </p>
-      </div>
+        <div class="imgContainer">
+          <img src="<?php echo $img['url']; ?>" alt="backgroundImg">
+          <p> <?php echo $text ?> </p>
+        </div>
 
-      <?php
-            endwhile;
-        endif;
-      ?>
+        <?php
+              endwhile;
+          endif;
+        ?>
+      </div>
     </div>
   </div>
 
   <div id="EquipeContent">
       <div class="agence_leftBlock">
-        <h3> <?php the_field(agence_qui_sommes_nous); ?> </h3>
-        <p> <?php the_field(agence_sous_titre); ?> </p>
+        <h3 class="headlineBlack"> <?php the_field('agence_qui_sommes_nous'); ?> </h3>
+        <p> <?php the_field('agence_sous_titre'); ?> </p>
+         <?php the_field('agence_button'); ?> 
       </div>
 
 
