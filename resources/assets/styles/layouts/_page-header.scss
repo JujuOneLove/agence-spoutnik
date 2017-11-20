@@ -1,8 +1,15 @@
 .page-header {
-  width:500px;
-  height:500px;
-  color:pink;
+  width:100%;
+  height:75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-h1{
-  color: pink!important;
+
+.page-header h1,h2{
+  color:white;
+}
+
+.page-header h2{
+
 }
