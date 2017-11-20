@@ -3,9 +3,18 @@
 --}}
 @extends('layouts.app')
 
-@section('content')
-<section class="block">
-  <div class="container">
+
+
+<?php
+$urlImage = get_post_thumbnail_id(); 
+$urlImage = wp_get_attachment_image_src($urlImage,'large'); 
+?>
+
+
+<section class="backgroundhome" style='background-image:url(<?= $urlImage[0] ?>);'>
+ @section('content')
+    
+  <div>
     <p><?php echo get_field('accueil_amorce'); ?></p>
     <h1>
       <?php echo get_field('accueil_accroche'); ?>
