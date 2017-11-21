@@ -1,10 +1,10 @@
 <nav class="primary-nav">
 
-<div class="primary-nav__logo">
-  <a href="<?= esc_url( home_url( '/' ) ); ?>">
-    LOGO
-  </a>
-</div>
+  <div class="primary-nav__logo">
+    <a href="{{ get_theme_file_uri() }}/dist/images/logo.svg">
+      LOGO
+    </a>
+  </div>
 
 <?php
   $args = array(
