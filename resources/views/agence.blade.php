@@ -39,7 +39,7 @@
   <div id="EquipeContent">
       <div class="agence_leftBlock">
         <h3 class="headlineBlack"> <?php the_field('agence_qui_sommes_nous'); ?> </h3>
-        <p> <?php the_field('agence_sous_titre'); ?> </p>
+        <div id="MgBottom"> <?php the_field('agence_sous_titre'); ?> </div>
         <a href="<?php the_field('agence_button'); ?> " class="agence_button">Nous contacter </a>
          
       </div>
