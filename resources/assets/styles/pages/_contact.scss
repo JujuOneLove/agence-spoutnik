@@ -1,3 +1,18 @@
-.contact_container{
-  
+.contact_container p{
+  color: black;
+  left: 0;
+}
+
+.explication, .info{
+  margin: 50px;
+}
+
+.info img{
+  //padding: 0px 50px;
+  width: 30px;
+  float: left;
+}
+
+.info p {
+  padding: 5px 50px;
 }
