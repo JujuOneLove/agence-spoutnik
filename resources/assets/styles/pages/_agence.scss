@@ -62,8 +62,7 @@
     text-align: center;
 }
 
-.agence_button {
-    
+.agence_button { 
     padding: 10px 20px;
     border: solid 1px;
     color: #0b0726;
@@ -73,3 +72,61 @@
     margin-bottom: 3rem;
 }
 
+
+#statsContent {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#grey_Square {
+    background: $light-grey;
+    height: 80vh;
+    width: 90vw;
+    text-align: center;
+    position: relative;
+}
+
+.spoutnikC {
+    background: $primary;
+    font-weight: 700;
+    margin-top: 50px;    
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+}
+
+.CenterGreyContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.agence_statItems img {
+    opacity: 0.08;
+    padding: 20px;
+}
+
+.agence_statItems {
+    position: relative;
+}
+
+.stat_All {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.stat_All p {
+    text-transform: uppercase;
+}
+
+.NumberStats {
+    font-weight: 700;
+    font-size: 5rem;
+    margin-bottom: -20px;
+}

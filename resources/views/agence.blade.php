@@ -3,6 +3,7 @@
 --}}
 
 @extends('layouts.app')
+@include('partials.page-header')
 
 @section('content')
   <div class="agence_container">
@@ -49,29 +50,34 @@
   </div>
 
   <div id="statsContent">
-      <h2> <?php the_field(titre_statistique) ?>  </h2>
+     <div id="grey_Square">
+       <h2 class="spoutnikC"> <?php the_field('titre_statistique') ?>  </h2>
+        <div class="row CenterGreyContent">
 
-      <?php
-      // check if the repeater field has rows of data
-      if( have_rows('agence_statistiques_chiffre') ):
-        // loop through the rows of data
-          while ( have_rows('agence_statistiques_chiffre') ) : the_row();
-              // display a sub field value
-              $imgStats=get_sub_field('image_stats');
-              $chiffreStat=get_sub_field('chiffres_stats');
-              $textStats=get_sub_field('text_stats');
-      ?>
+          <?php
+          // check if the repeater field has rows of data
+          if( have_rows('agence_statistiques_chiffre') ):
+            // loop through the rows of data
+              while ( have_rows('agence_statistiques_chiffre') ) : the_row();
+                  // display a sub field value
+                  $imgStats=get_sub_field('image_stats');
+                  $chiffreStat=get_sub_field('chiffres_stats');
+                  $textStats=get_sub_field('text_stats');
+          ?>
 
-    <div class="agence_statItems">
-      <img src="<?php echo $imgStats['url']; ?>" alt="Icons">
-      <p> <?php echo $chiffreStat ?> </p>
-      <p> <?php echo $textStats ?> </p>
-    </div>
-
-    <?php
-          endwhile;
-      endif;
-    ?>
+        <div class="agence_statItems large-4 columns">
+          <img src="<?php echo $imgStats['url']; ?>" alt="Icons">
+           <div class="stat_All">
+              <p class="NumberStats"> <?php echo $chiffreStat ?> </p>
+              <p> <?php echo $textStats ?> </p>
+           </div>
+        </div>
+        <?php
+              endwhile;
+          endif;
+        ?>
+       </div>
+     </div>
   </div>
 
 
