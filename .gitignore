@@ -72,3 +72,7 @@ typings/
 .cache-loader/
 dist/
 # End of https://www.gitignore.io/api/git,sass,node
+
+resources/assets/config.json
+
+resources/views/\.DS_Store

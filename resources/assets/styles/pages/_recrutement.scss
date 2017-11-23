@@ -1,0 +1,21 @@
+.rejoignez {
+  text-align: center;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+input, select, option, textarea {
+  background-color: $formulaire;
+  border-radius: 10px;
+  padding: 10px;
+  font-style: italic;
+}
+
+.wpcf7-submit {
+  background-color: white;
+  border-radius: 0px;
+  opacity: 1;
+  border: 1px solid $primary;
+}

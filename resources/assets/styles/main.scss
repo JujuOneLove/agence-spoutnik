@@ -14,19 +14,28 @@
 /** Import theme styles */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900);
 @import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400i);
+
+//Common
 @import "common/global";
 @import "common/typography";
 @import "common/wp-classes";
+
+//Components
 @import "components/buttons";
-@import "components/comments";
-@import "components/forms";
-@import "components/bulles";
-@import "components/arrow";
+
+//Layouts
 @import "layouts/header";
 @import "layouts/navbar";
 @import "layouts/sidebar";
 @import "layouts/footer";
-@import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
+@import "layouts/page-header";
+
+//Pages
 @import "pages/home";
+@import "pages/agence";
+@import "pages/reference";
+@import "pages/articles";
+@import "pages/contact";
+@import "pages/recrutement";
