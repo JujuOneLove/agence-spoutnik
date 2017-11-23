@@ -95,8 +95,8 @@ Container::getInstance()
 function register_my_cpts() {
     
     $labels = array(
-    "name"          => "Projets",
-    "singular_name" => "Projet",
+    "name"          => "Références",
+    "singular_name" => "Référence",
     );
     $args = array(
     "labels"              => $labels,
@@ -109,11 +109,11 @@ function register_my_cpts() {
     "capability_type"     => "post",
     "map_meta_cap"        => true,
     "hierarchical"        => false,
-    "rewrite"             => array( "slug" => "projets", "with_front" => true ),
+    "rewrite"             => array( "slug" => "references", "with_front" => true ),
     "query_var"           => true,
     "supports"            => array( "title", "editor", "excerpt", "thumbnail" )
     );
-    register_post_type( "projets", $args );
+    register_post_type( "references", $args );
 
 }
 
