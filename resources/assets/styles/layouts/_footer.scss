@@ -1,0 +1,40 @@
+footer{
+  background-color: $secondary;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+footer p {
+    margin-bottom: inherit;
+}
+
+.ref_footer{
+  //float: left;
+  font-size: 34px;
+}
+
+.contact_footer button{
+  color: $secondary;
+  background-color: white;
+  border-radius: 0px;
+  opacity: 1;
+  border: 1px solid;
+}
+
+.contact_footer p span{
+  background: $primary;
+  padding: 5px 20px;
+  text-transform: uppercase;
+}
+.mention_footer{
+  background-color: $primary;
+  color: black;
+  text-transform: none;
+  text-align: center;
+  padding: 5px 0px;
+}
+
+.mention_footer p{
+  margin: 5px 0px;
+}
