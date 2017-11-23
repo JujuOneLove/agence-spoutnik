@@ -1,3 +1,20 @@
 .reference_container{
-  
+
 }
+
+.reference_container .filter_works{
+    display:flex;
+    justify-content: center;
+    background-color:$light-grey;
+    align-items: center;
+}
+
+.reference_container .filter_works p, .reference_container .filter_works a{
+    margin:0;
+    padding-top:15px;
+    padding-bottom:15px;
+    color:black;
+    margin-left:10px;
+    text-transform: uppercase;
+}
+
