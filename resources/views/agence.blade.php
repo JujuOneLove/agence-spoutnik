@@ -82,7 +82,7 @@
 
 
   <div id="avis">
-      <h2> <?php the_field(titre_avis) ?>  </h2>
+    <h2 id="avis_center"> <?php the_field('dernier_avis') ?> </h2>
   </div>
 
   
