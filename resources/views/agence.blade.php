@@ -24,9 +24,11 @@
                 $text=get_sub_field('square_texte');
       ?>
 
-        <div class="imgContainer">
+        <div class="imgContainer effect-bubba">
           <img src="<?php echo $img['url']; ?>" alt="backgroundImg">
           <p> <?php echo $text ?> </p>
+          <figcaption> 
+          </figcaption>
         </div>
 
         <?php
