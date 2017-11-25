@@ -9,11 +9,7 @@
   ]
   },
   "publicPath": "/wp-content/themes/spoutnik",
-<<<<<<< HEAD
-  "devUrl": "http://localhost/Spoutnik",
-=======
-  "devUrl": "http://localhost/spoutnik",
->>>>>>> cc09493c857997f6a457541a410f81a7d648be7a
+  "devUrl": "http://localhost:8888/spoutnik",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
