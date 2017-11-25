@@ -1,86 +1,88 @@
-body.home.page-template.page-template-home.page.page-id-5.logged-in.admin-bar.app-data.index-data.singular-data.page-data.page-5-data.page-accueil-data.home-data.front-page-data.customize-support {
-    overflow: hidden;
-}
 
 .backgroundhome{
-    background-size:cover;
-    background-position:center;
-    height:100vh;
-}
-
-.backgroundhome .container_page{
-    display:flex;
-    height:100%;
-    flex-direction: column;
-}
-
-.backgroundhome .container_page {
-    justify-content:center;
-    align-items:center;
-    position:relative;
-    bottom:20px;
-}
-
-.backgroundhome .container_page h1,.backgroundhome .container_page p{
-    color:#fff;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    font-weight:bold;
+    background-position:            center;
+    background-size:                cover;
+    height:                         100vh;
+    background-repeat: no-repeat;
+    background-color: $secondary;
+    padding-top: 65px;
     
+    &:hover{
+        //transition: all ease-out 20s;
+        //background-size: 140%;
+    }
+
+    .container_page{
+        align-items:                center;
+        bottom:                     20px;
+        display:                    flex;
+        flex-direction:             column;
+        height:                     100%;
+        justify-content:            center;
+        position:                   relative;
+
+        h1, p{
+            color:                  #fff;
+            font-family:            "Montserrat", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+            font-weight:            bold;
+        }
+        h1 span{
+            background:             $primary;
+            padding-left:           30px;
+            padding-right:          30px;
+            text-transform:         uppercase;
+        }
+
+        h1::before{
+            color:                  $primary;
+            content:                "< ";
+            font-size:              50px;
+        }
+        h1::after{
+            color:                  $primary;
+            content:                " />";
+            font-size:              50px;
+        }
+
+        p{
+            left:                   100px;
+            position:               relative;
+        }
+
+        .explore_button{
+            border:                 solid white 2px;   
+            color:                  white;
+            font-size:              25px;
+            font-weight:            450;
+            padding:                5px 20px;
+            position:               relative;
+            top:                    70px;
+            transition: all 150ms ease-out;
+
+            &:hover{
+                color:              $primary;
+                background:         white;
+            }
+        }
+    }
 }
 
-.backgroundhome .container_page h1 span{
-    background:$primary;
-    padding-left: 30px;
-    padding-right: 30px;
-    text-transform: uppercase;
-}
 
-.backgroundhome .container_page .container_texte h1:before{
-    content:"< ";
-}
-
-.backgroundhome .container_page .container_texte h1:after{
-    content:" />";
-}
-
-.backgroundhome .container_page .container_texte h1:after,.backgroundhome .container_page .container_texte h1:before{
-    color:$primary;
-    font-size:50px;
-}
-
-.backgroundhome .container_page p{
-    position:relative;
-    left:100px;
-}
-
-.backgroundhome .container_page .explore_button{
-    color:white;
-    border:solid white 2px;   
-    padding-left:35px;
-    padding-right:35px;
-    font-size:25px;
-    font-weight:450;
-    position:relative;
-    top:70px;
-}
-
-.backgroundhome .container_page .explore_button:hover{
-    color:$primary;
-    background:white;
-}
-    
-
-
-/**********MEDIA QUERIES**********/
-@media only screen and  (max-width : 640px) {
-.backgroundhome .container_page p{
-    position:static;
-    text-align:center;
-}
-    
-.backgroundhome .container_page .container_texte h1:after,.backgroundhome .container_page .container_texte h1:before{
-    font-size:30px;
-}
-    
+@media only screen and  (max-width: 640px) {
+    .backgroundhome{
+        .container_page{
+            p{
+                position:           static;
+                text-align:         center;
+            }
+            h1{
+                font-size:          40px;
+            }
+            h1::after, h1::before{
+                font-size:          40px;
+            }
+        }
+    }
+        
 }
 

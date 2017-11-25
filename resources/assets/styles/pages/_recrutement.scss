@@ -6,11 +6,16 @@ h2 {
   font-weight: bold;
 }
 
-input, select, option, textarea {
+input, textarea {
   background-color: $formulaire;
   border-radius: 10px;
   padding: 10px;
   font-style: italic;
+  border: none;
+}
+
+input, textarea {
+  margin-top: 2rem;
 }
 
 .wpcf7-submit {
@@ -18,4 +23,13 @@ input, select, option, textarea {
   border-radius: 0px;
   opacity: 1;
   border: 1px solid $primary;
+  font-style: normal;
+}
+
+.rejoignez .wpcf7-file {
+  margin-top: 0.5rem;
+}
+
+.rejoignez .wpcf7-text, .rejoignez .wpcf7-textarea {
+  width: 80%;
 }

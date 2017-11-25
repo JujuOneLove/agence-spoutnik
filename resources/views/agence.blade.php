@@ -24,9 +24,11 @@
                 $text=get_sub_field('square_texte');
       ?>
 
-        <div class="imgContainer">
+        <div class="imgContainer effect-bubba">
           <img src="<?php echo $img['url']; ?>" alt="backgroundImg">
           <p> <?php echo $text ?> </p>
+          <figcaption> 
+          </figcaption>
         </div>
 
         <?php
@@ -82,7 +84,7 @@
 
 
   <div id="avis">
-      <h2> <?php the_field(titre_avis) ?>  </h2>
+    <h2 id="avis_center"> <?php the_field('dernier_avis') ?> </h2>
   </div>
 
   
