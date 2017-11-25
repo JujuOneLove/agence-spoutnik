@@ -11,6 +11,7 @@
     font-weight: 700;
     margin-bottom: 25px;
     color: $secondary;
+    margin-top: 50px;
 }
 
 .paddingP {
@@ -134,3 +135,55 @@
 #avis_center {
     text-align: center;
 }
+
+
+.effect-bubba {
+    overflow: hidden;
+}
+
+
+.effect-bubba img {
+	opacity: 0.3;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+.effect-bubba:hover img {
+    opacity: 0.1;
+    transform: scale(1.25);
+}
+
+.effect-bubba figcaption::before,
+.effect-bubba figcaption::after {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.5s;
+	transition: opacity 0.35s, transform 0.5s;
+}
+
+.effect-bubba figcaption::before {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+.effect-bubba figcaption::after {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	-webkit-transform: scale(1,0);
+	transform: scale(1,0);
+}
+
+.effect-bubba:hover figcaption::before,
+.effect-bubba:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+

@@ -1,17 +1,15 @@
-.primary-nav {
+.main_nav {
+  margin:            20px 0;
+  position:          fixed;
+  width:             100%;
+  z-index:           1;
+  top: 50px;
   ul {
-    display: flex;
+    display:         flex;
     justify-content: space-around;
-    list-style: none;
+    list-style:      none;
     a {
-      color: white;
+      color:         white;
     }
-    li:nth-child(3) {
-      margin-right: 200px;
-    }
-  }
-  .primary-nav__logo {
-    position: absolute;
-    right: 50%;
   }
 }
