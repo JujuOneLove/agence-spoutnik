@@ -9,6 +9,7 @@
             <div class="ref_img">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/nasaLogo.png" alt="Nasa">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/appleLogo.svg" alt="Apple">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo-arras-hd.png" alt="Arras">
             </div>
           </div>
         </div>
