@@ -49,18 +49,13 @@
 #EquipeContent {
     background: $light-grey;
     height: 100vh;
-    position: relative;
 }
 
 .agence_leftBlock {
     background: #fff;
-    position: absolute;
-    left: 75px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 400px;
     padding: 75px;
     text-align: center;
+    margin-left: 25px;
 }
 
 .agence_button { 
@@ -72,6 +67,31 @@
 #MgBottom{
     margin-bottom: 3rem;
 }
+
+
+
+
+
+
+
+.cercle {
+    background: $secondary;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    background-size: cover;
+}
+
+#EquipeContent .marginTop {
+    margin-top: 150px;
+} 
+
+
+
+
+
 
 
 #statsContent {
