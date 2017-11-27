@@ -5,6 +5,7 @@
   z-index:           1;
   background:        rgba(57, 208, 154, 0.8);
   margin:            0;
+  top:               0;
   .dropdown.menu {
     display:         flex;
     justify-content: space-around;
@@ -18,6 +19,6 @@
     border-color:    $primary;
   }
   .dropdown.menu>li.is-dropdown-submenu-parent>a::after{
-    border-color:    $primary transparent transparent;
+    border-color:    white transparent transparent;
   }
 }
