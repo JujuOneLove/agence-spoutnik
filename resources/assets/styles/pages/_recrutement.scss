@@ -10,12 +10,15 @@ input, textarea {
   background-color: $formulaire;
   border-radius: 10px;
   padding: 10px;
-  font-style: italic;
   border: none;
 }
 
 input, textarea {
   margin-top: 2rem;
+}
+
+::placeholder {
+  font-style: italic;
 }
 
 .wpcf7-submit {

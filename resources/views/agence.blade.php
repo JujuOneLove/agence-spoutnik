@@ -6,36 +6,38 @@
 @include('partials.page-header')
 
 @section('content')
-  <div class="agence_container">
-    <div id="agence_NosMetiersContent">
+  <div class="agence_container row">
+    <div id="agence_NosMetiersContent small-12 column">
         <h2 class="headlineBlack"> <?php the_field('agence_title');  ?> </h2>
         <div class="paddingP"> <?php the_field('agence_soustitre'); ?> </div>
 
 
-<div class="agence_square">
+        <ul class="agence_square row">
 
-        <?php
-        // check if the repeater field has rows of data
-        if( have_rows('agence_square') ):
-          // loop through the rows of data
-            while ( have_rows('agence_square') ) : the_row();
-                // display a sub field value
-                $img=get_sub_field('image_square');
-                $text=get_sub_field('square_texte');
-       ?>
+          <?php
+          // check if the repeater field has rows of data
+          if( have_rows('agence_square') ):
+            // loop through the rows of data
+              while ( have_rows('agence_square') ) : the_row();
+                  // display a sub field value
+                  $img=get_sub_field('image_square');
+                  $text=get_sub_field('square_texte');
+                  $lien=get_sub_field('square_lien');
+          ?>
+            <li class='small-6 medium-4 large-4 column'> 
+              <a href='<?=$lien?>' class="imgContainer effect-bubba">
+                <img src="<?php echo $img['url']; ?>" alt="backgroundImg">
+                <p> <?php echo $text ?> </p>
+                <figcaption> 
+                </figcaption>
+              </a>
+            </li>
+          <?php
+                endwhile;
+            endif;
+          ?>
 
-        <div class="imgContainer effect-bubba">
-          <img src="<?php echo $img['url']; ?>" alt="backgroundImg" />
-          <p> <?php echo $text ?> </p>
-          <figcaption> 
-          </figcaption>
-        </div>
-
-        <?php
-              endwhile;
-          endif;
-        ?>
-      </div>
+      </ul>
     </div>
   </div>
 
