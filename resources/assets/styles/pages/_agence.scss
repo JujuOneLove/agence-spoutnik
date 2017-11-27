@@ -1,6 +1,10 @@
 .agence_container {
 }
 
+.textAlign {
+    text-align: center;
+}
+
 #agence_NosMetiersContent {
     text-align: center;
 }
@@ -73,10 +77,6 @@
 
 
 
-
-
-
-
 .cercle {
     background: $secondary;
     border-radius: 100%;
@@ -85,6 +85,28 @@
     height: 0;
     padding-top: 100%;
     background-size: cover;
+    margin-bottom: 50px;
+    text-align: center;
+
+
+    #prezEquipetAG {
+        padding: 10px 20px;
+        background: $primary;
+        color: #fff;
+    }
+
+    #prezEquipeNom {
+        margin-top: 10px;
+    }
+
+    p span {
+        font-weight: 700;
+        font-size: 1.3rem;
+    }
+}
+
+.paddingCercle {
+    padding: 3em;
 }
 
 #EquipeContent .marginTop {
