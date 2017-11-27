@@ -8,8 +8,8 @@
 @section('content')
   <div class="agence_container row">
     <div id="agence_NosMetiersContent small-12 column">
-        <h2 class="headlineBlack"> <?php the_field('agence_title');  ?> </h2>
-        <div class="paddingP"> <?php the_field('agence_soustitre'); ?> </div>
+        <h2 class="headlineBlack textAlign"> <?php the_field('agence_title');  ?> </h2>
+        <div class="paddingP textAlign"> <?php the_field('agence_soustitre'); ?> </div>
 
 
         <ul class="agence_square row">
@@ -65,9 +65,12 @@
           ?>
 
 
-              <div class="large-4 column">
+              <div class="large-4 column paddingCercle">
                   <!-- <img src="<?php echo $cercle['url']; ?>" alt="EquipePhoto" class="cercle" /> -->
-                  <div style="background-image: url(<?php echo $cercle['url']; ?>)" class="cercle"></div>
+                  <div style="background-image: url(<?php echo $cercle['url']; ?>)" class="cercle">
+                      <p id="prezEquipeNom"><span><?php echo $prezEquipeNom ?></span></p>
+                      <p id="prezEquipetAG"><?php echo $prezEquipetAG ?></p>
+                  </div>
               </div>  
 
           <?php
