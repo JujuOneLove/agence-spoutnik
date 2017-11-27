@@ -17,11 +17,13 @@
 
 .reference_container .references_works {
     display:flex;
+    flex-direction: row;
+        flex-wrap: wrap;
 }
 
 .reference_container .references_works .entry{
-    height:350px;
-    flex-wrap: wrap;
+    height:250px;
     border:black solid 1px;
     width:25%;
+    background-color: aquamarine;
 }

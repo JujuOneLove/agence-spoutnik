@@ -18,10 +18,13 @@
             <h1>
                 <span><?php echo get_field('accueil_accroche'); ?></span>
             </h1>
-            <h2><?php echo get_field('accueil_texte'); ?></h2>
+            <?php echo get_field('accueil_texte'); ?>
           </div>
         </div>
-        <a href="<?php the_field('agence_button'); ?>" class="explore_button"><?php the_field('accueil_button_texte');?></a>
+         <h2> 
+            <a href="<?php the_field('agence_button'); ?>" class="explore_button">
+                <?php the_field('accueil_button_texte');?></a>
+        </h2>
       </div>
   </section>
 @endsection
