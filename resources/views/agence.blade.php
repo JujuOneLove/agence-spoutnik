@@ -8,8 +8,8 @@
 @section('content')
   <div class="agence_container row">
     <div id="agence_NosMetiersContent small-12 column">
-        <h2 class="headlineBlack"> <?php the_field('agence_title');  ?> </h2>
-        <div class="paddingP"> <?php the_field('agence_soustitre'); ?> </div>
+        <h2 class="headlineBlack textAlign"> <?php the_field('agence_title');  ?> </h2>
+        <div class="paddingP textAlign"> <?php the_field('agence_soustitre'); ?> </div>
 
 
         <ul class="agence_square row">
@@ -41,16 +41,51 @@
     </div>
   </div>
 
-  <div id="EquipeContent">
-      <div class="agence_leftBlock">
-        <h3 class="headlineBlack"> <?php the_field('agence_qui_sommes_nous'); ?> </h3>
-        <div id="MgBottom"> <?php the_field('agence_sous_titre'); ?> </div>
-        <a href="<?php the_field('agence_button'); ?> " class="agence_button">Nous contacter </a>
-         
+  <div class="row expanded align-middle align-center" id="EquipeContent">
+
+      <div class="large-3 column">
+          <div class="agence_leftBlock">
+              <h3 class="headlineBlack"> <?php the_field('agence_qui_sommes_nous'); ?> </h3>
+              <div id="MgBottom"> <?php the_field('agence_sous_titre'); ?> </div>
+              <a href="<?php the_field('agence_button'); ?> " class="agence_button">Nous contacter </a>      
+          </div>
       </div>
 
+      <div class="large-7 column">
+        <div class="row align-center">
+          <?php
+          // check if the repeater field has rows of data
+          if( have_rows('agence_cercle_equipe') ):
+            // loop through the rows of data
+              while ( have_rows('agence_cercle_equipe') ) : the_row();
+                  // display a sub field value
+                  $cercle=get_sub_field('image_cercle');
+                  $prezEquipeNom=get_sub_field('agence_nom');
+                  $prezEquipetAG=get_sub_field('agence_tag');
+          ?>
 
-<!-- afficher les cercles !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  -->
+
+              <div class="large-4 column paddingCercle">
+                  <!-- <img src="<?php echo $cercle['url']; ?>" alt="EquipePhoto" class="cercle" /> -->
+                  <div style="background-image: url(<?php echo $cercle['url']; ?>)" class="cercle">
+                      <p id="prezEquipeNom"><span><?php echo $prezEquipeNom ?></span></p>
+                      <p id="prezEquipetAG"><?php echo $prezEquipetAG ?></p>
+                  </div>
+              </div>  
+
+          <?php
+              endwhile;
+          endif;
+          ?>
+
+
+
+
+
+          </div>
+
+      </div>
+
   </div>
 
   <div id="statsContent">
