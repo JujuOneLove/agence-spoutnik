@@ -21,10 +21,14 @@
             <?php echo get_field('accueil_texte'); ?>
           </div>
         </div>
+<<<<<<< HEAD
          <h2> 
             <a href="<?php the_field('agence_button'); ?>" class="explore_button">
                 <?php the_field('accueil_button_texte');?></a>
         </h2>
+=======
+        <a href="<?php the_field('accueil_bouton'); ?>" class="explore_button"><?= get_field('accueil_button_texte');?></a>
+>>>>>>> 2739924fff2decd60844d38aa3fe44f61bd71fa0
       </div>
   </section>
 @endsection

@@ -23,7 +23,40 @@
 
 .reference_container .references_works .entry{
     height:250px;
-    border:black solid 1px;
     width:25%;
-    background-color: aquamarine;
+    display:flex;
+    flex-direction:column;
+}
+
+.reference_container .references_works .entry .container_symbol{
+    text-align: center;
+    margin-top:auto;
+
+}
+
+.reference_container .references_works .entry .container_symbol .symbol{
+    color:white;
+    font-size:100px;
+}
+
+.reference_container .references_works .entry .container_title{
+    width:100%;
+    background-color:white;
+    margin-top:auto;    
+}
+
+.reference_container .references_works .entry .container_title .title{
+    text-align: right;
+    margin-right:30px;
+    font-size:18px;
+    margin-bottom:0px;
+
+}
+
+.info_entry{
+    display:none;
+}
+
+.entry:hover .info_entry{
+    display:block;
 }

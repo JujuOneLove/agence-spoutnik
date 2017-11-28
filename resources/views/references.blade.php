@@ -29,7 +29,13 @@
             if ( $query->have_posts() ) : ?>
                 <?php while ( $query->have_posts() ) : $query->the_post(); ?>	
                     <div class="entry" style='background-image:url(<?= $entry_img[0] ?>);'>
-                        <h2 class="title"><?php the_title(); ?></h2>
+                            <div class="container_symbol info_entry">   
+                                <div class= "symbol">+</div> 
+                            </div>  
+
+                            <div class="container_title info_entry">
+                                <h2 class="title"><?php the_title(); ?> ></h2>
+                            </div>   
                     </div>
                 <?php endwhile; wp_reset_postdata(); ?>
                 <!-- show pagination here -->
