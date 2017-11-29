@@ -35,13 +35,13 @@
 }
 
 .reference_container .references_works .entry .container_symbol .symbol{
-    color:white;
+    color:$light-grey;
     font-size:100px;
 }
 
 .reference_container .references_works .entry .container_title{
     width:100%;
-    background-color:white;
+    background-color:$light-grey;
     margin-top:auto;    
 }
 
@@ -53,10 +53,13 @@
 
 }
 
-.info_entry{
-    display:none;
+
+.entry .info_entry{
+    opacity:0;
+    transition: all 0.1s;
 }
 
 .entry:hover .info_entry{
     display:block;
+    opacity:1;
 }
