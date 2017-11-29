@@ -31,8 +31,13 @@ input, textarea {
 
 .rejoignez .wpcf7-file {
   margin-top: 0.5rem;
+  width: 80%;
 }
 
 .rejoignez .wpcf7-text, .rejoignez .wpcf7-textarea {
   width: 80%;
+}
+
+.large input, textarea {
+  width: 92.5%!important;
 }
