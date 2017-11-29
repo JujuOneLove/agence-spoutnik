@@ -8,8 +8,8 @@
 @section('content')
   <div class="agence_container row">
     <div id="agence_NosMetiersContent small-12 column">
-        <h2 class="headlineBlack textAlign"> <?php the_field('agence_title');  ?> </h2>
-        <div class="paddingP textAlign"> <?php the_field('agence_soustitre'); ?> </div>
+        <h2 class="headlineBlack textAlign small-12 column"> <?php the_field('agence_title');  ?> </h2>
+        <div class="paddingP textAlign small-12 column"> <?php the_field('agence_soustitre'); ?> </div>
 
 
         <ul class="agence_square row">
@@ -43,7 +43,7 @@
 
   <div class="row expanded align-middle align-center" id="EquipeContent">
 
-      <div class="large-3 column">
+      <div class="small-12 medium-12 large-3 column">
           <div class="agence_leftBlock">
               <h3 class="headlineBlack"> <?php the_field('agence_qui_sommes_nous'); ?> </h3>
               <div id="MgBottom"> <?php the_field('agence_sous_titre'); ?> </div>
@@ -51,7 +51,7 @@
           </div>
       </div>
 
-      <div class="large-7 column">
+      <div class="small-12 medium-12 large-7 column">
         <div class="row align-center">
           <?php
           // check if the repeater field has rows of data
@@ -65,7 +65,7 @@
           ?>
 
 
-              <div class="large-4 column paddingCercle">
+              <div class="small-6 medium-6 large-4 column paddingCercle">
                   <!-- <img src="<?php echo $cercle['url']; ?>" alt="EquipePhoto" class="cercle" /> -->
                   <div style="background-image: url(<?php echo $cercle['url']; ?>)" class="cercle">
                       <p id="prezEquipeNom"><span><?php echo $prezEquipeNom ?></span></p>

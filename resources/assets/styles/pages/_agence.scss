@@ -62,7 +62,6 @@
     background: #fff;
     padding: 75px;
     text-align: center;
-    margin-left: 25px;
 }
 
 .agence_button { 
@@ -232,3 +231,9 @@
 	transform: scale(1);
 }
 
+
+@media (max-width: 1440px) {
+    #EquipeContent {
+        height: inherit;
+    }
+}
