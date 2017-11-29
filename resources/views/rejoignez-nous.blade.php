@@ -3,8 +3,8 @@
 --}}
 
 @extends('layouts.app')
-@include('partials.page-header')
 @section('content')
+@include('partials.page-header')
 <section class="rejoignez">
   <div class="rejoigneznous_container">
         <h2> <?php the_field(recrutement_titre);  ?> </h2>

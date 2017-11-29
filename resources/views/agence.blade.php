@@ -3,9 +3,9 @@
 --}}
 
 @extends('layouts.app')
-@include('partials.page-header')
 
 @section('content')
+@include('partials.page-header')
   <div class="agence_container row">
     <div id="agence_NosMetiersContent small-12 column">
         <h2 class="headlineBlack textAlign"> <?php the_field('agence_title');  ?> </h2>
