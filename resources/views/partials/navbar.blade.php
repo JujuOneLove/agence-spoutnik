@@ -17,7 +17,7 @@
           @if ( !$item->menu_item_parent )
             @php ($parent_id = $item->ID)
       <li class="item">
-          <a href="{{$item->url}}" class="title">
+          <a href="{{$item->url}}" class="menu-title">
               {{$item->title}}
           </a>
       <?php endif; ?>
