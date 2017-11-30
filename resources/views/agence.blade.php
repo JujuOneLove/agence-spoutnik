@@ -9,7 +9,7 @@
 
   <div class="row">
     <div id="agence_NosMetiersContent" class='small-12 column'>
-        <h2 class="headlineBlack textAlign"> <?php the_field('agence_title');  ?> </h2>
+        <div class="headlineBlack textAlign"> <?php the_field('agence_title');  ?> </div>
         <div class="paddingP textAlign"> <?php the_field('agence_soustitre'); ?> </div>
 
 
@@ -26,12 +26,12 @@
                   $lien=get_sub_field('square_lien');
           ?>
             <li class='small-6 medium-4 large-4 column'> 
-              <a href='<?=$lien?>' class="imgContainer effect-bubba">
+              <div class="imgContainer effect-bubba">
                 <img src="<?php echo $img['url']; ?>" alt="backgroundImg" />
-                <p> <?php echo $text ?> </p>
+                <h2><?php echo $text ?> </h2>
                 <figcaption> 
                 </figcaption>
-              </a>
+              </div>
             </li>
           <?php
                 endwhile;
@@ -46,13 +46,13 @@
 
       <div class="small-12 medium-12 large-3 column fix_LeftBloc">
           <div class="agence_leftBlock">
-              <h3 class="headlineBlack"> <?php the_field('agence_qui_sommes_nous'); ?> </h3>
+              <div class="headlineBlack"> <?php the_field('agence_qui_sommes_nous'); ?> </div>
               <div id="MgBottom"> <?php the_field('agence_sous_titre'); ?> </div>
               <a href="<?php the_field('agence_button'); ?> " class="agence_button">Nous contacter </a>      
           </div>
       </div>
 
-      <div class="small-12 medium-12 large-7 column">
+      <div class="small-12 medium-12 large-7 column show-for-large">
         <div class="row align-center">
           <?php
           // check if the repeater field has rows of data
@@ -92,7 +92,7 @@
   <div id="statsContent">
     <div id="grey_Square" class="align-middle">
       <div class="row CenterGreyContent">
-          <h2 class="spoutnikC small-12 medium-12 large-12 columns"> <?php the_field('titre_statistique') ?>  </h2>
+          <div class="spoutnikC small-12 medium-12 large-12 columns"> <?php the_field('titre_statistique') ?>  </div>
 
           <?php
           // check if the repeater field has rows of data
