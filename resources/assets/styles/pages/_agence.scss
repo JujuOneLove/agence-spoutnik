@@ -85,7 +85,8 @@
     background-size: cover;
     margin-bottom: 50px;
     text-align: center;
-
+    -webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
 
     #prezEquipetAG {
         padding: 10px 20px;
@@ -103,17 +104,18 @@
     }
 }
 
+.cercle:hover {
+    transform: scale(1.05);
+}
+
 .paddingCercle {
     padding: 3em;
 }
 
+
 #EquipeContent .marginTop {
     margin-top: 150px;
 } 
-
-
-
-
 
 
 
@@ -257,6 +259,11 @@
         .NumberStats {
             font-size: 3rem;
         }
+    }
+
+    .paddingCercle {
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 }
 
