@@ -1,5 +1,5 @@
 {{--
-  Template Name: site-vitrine
+  Template Name: template-prestation
 --}}
 
 @extends('layouts.app')
@@ -7,6 +7,6 @@
 @section('content')
 @include('partials.page-header')
 
-<h1>Test Site vitrine </h1>
+aef
 
 @endsection
