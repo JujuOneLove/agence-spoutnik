@@ -3,13 +3,22 @@
   position:          fixed;
   width:             100%;
   z-index:           1;
-  top: 50px;
-  ul {
+  background:        rgba(57, 208, 154, 0.8);
+  margin:            0;
+  top:               0;
+  .dropdown.menu {
     display:         flex;
     justify-content: space-around;
     list-style:      none;
     a {
       color:         white;
     }
+  }
+  .submenu{
+    background:      rgba(57, 208, 154, 0.5);
+    border-color:    $primary;
+  }
+  .dropdown.menu>li.is-dropdown-submenu-parent>a::after{
+    border-color:    white transparent transparent;
   }
 }
