@@ -3,13 +3,13 @@
 --}}
 
 @extends('layouts.app')
-@include('partials.page-header')
 
 
 
 
 
 @section('content')
+@include('partials.page-header')
 <section class>  
   <div class="reference_container">
     <div class="filter_works row"> 

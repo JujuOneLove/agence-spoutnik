@@ -3,11 +3,12 @@
 --}}
 
 @extends('layouts.app')
-@include('partials.page-header')
 
 @section('content')
-  <div class="agence_container row">
-    <div id="agence_NosMetiersContent small-12 column">
+@include('partials.page-header')
+
+  <div class="row">
+    <div id="agence_NosMetiersContent" class='small-12 column'>
         <h2 class="headlineBlack textAlign"> <?php the_field('agence_title');  ?> </h2>
         <div class="paddingP textAlign"> <?php the_field('agence_soustitre'); ?> </div>
 
@@ -24,7 +25,7 @@
                   $text=get_sub_field('square_texte');
                   $lien=get_sub_field('square_lien');
           ?>
-            <li class='small-6 medium-4 large-4 column'> 
+            <li class='small-6 medium-4 large-3 column'> 
               <a href='<?=$lien?>' class="imgContainer effect-bubba">
                 <img src="<?php echo $img['url']; ?>" alt="backgroundImg">
                 <p> <?php echo $text ?> </p>
