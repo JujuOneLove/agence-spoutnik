@@ -231,8 +231,13 @@
 }
 
 
-@media (max-width: 1440px) {
+@media (max-width: 1500px) {
     #EquipeContent {
         height: inherit;
     }
+
+    // .agence_leftBlock {
+    //     flex: 0 0 100%;
+    //     max-width: 100%;
+    // }
 }

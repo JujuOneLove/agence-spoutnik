@@ -27,7 +27,7 @@
           ?>
             <li class='small-6 medium-4 large-3 column'> 
               <a href='<?=$lien?>' class="imgContainer effect-bubba">
-                <img src="<?php echo $img['url']; ?>" alt="backgroundImg">
+                <img src="<?php echo $img['url']; ?>" alt="backgroundImg" />
                 <p> <?php echo $text ?> </p>
                 <figcaption> 
                 </figcaption>
