@@ -1,5 +1,5 @@
 {{--
-  Template Name: site-vitrine
+  Template Name: template-prestation
 --}}
 
 @extends('layouts.app')
