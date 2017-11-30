@@ -1,3 +1,4 @@
+
 .backgroundhome{
     background-position:            center;
     background-size:                cover;
@@ -10,8 +11,6 @@
         //transition: all ease-out 20s;
         //background-size: 140%;
     }
-    
- 
 
     .container_page{
         align-items:                center;
@@ -46,14 +45,10 @@
         }
 
         p{
-            left:                   200px;
+            left:                   100px;
             position:               relative;
             font-size: 17px;
             text-align: left;
-            padding-top:10px;
-            padding-bottom:10px;
-            display:inline-block;
-            width:auto;
         }
 
         .explore_button{
@@ -74,25 +69,8 @@
     }
 }
 
-@media only screen and  (max-width: 750px) {
-    .backgroundhome{
-        .container_page{
-            .texte_accueil{
-                
-                text-align:center;
-                p,h1,h2{
-                    position:static;
-                    text-align: center;
-                }
-            }
-            
-        
-        }
-    }
-        
-}
 
-@media only screen and  (max-width: 720px) {
+@media only screen and  (max-width: 640px) {
     .backgroundhome{
         .container_page{
             p{
@@ -109,24 +87,4 @@
     }
         
 }
-
-@media only screen and  (max-width: 612px) {
-    .backgroundhome{
-        .container_page{
-            p{
-                position:           static;
-                text-align:         center;
-            }
-            h1{
-                font-size:          35px;
-            }
-            h1::after, h1::before{
-                font-size:          35px;
-            }
-        }
-    }
-        
-}
-
-
 

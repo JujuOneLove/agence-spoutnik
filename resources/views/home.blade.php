@@ -18,7 +18,7 @@
             <h1>
                 <span><?php echo get_field('accueil_accroche'); ?></span>
             </h1>
-            <?php echo get_field('accueil_texte'); ?>
+            <h2><?php echo get_field('accueil_texte'); ?></h2>
           </div>
         </div>
 
