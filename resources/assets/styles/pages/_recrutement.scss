@@ -1,48 +1,43 @@
 .rejoignez {
-  text-align: center;
-}
-
-.title {
-  margin-top: 50px;
-  margin-bottom: 25px;
-}
-
-h2 {
-  font-weight: bold;
-}
-
-input, textarea {
-  background-color: $formulaire;
-  border-radius: 10px;
-  padding: 10px;
-  border: none;
-}
-
-input, textarea {
-  margin-top: 2rem;
-}
-
-::placeholder {
-  font-style: italic;
-}
-
-.wpcf7-submit {
-  background-color: white;
-  border-radius: 0px;
-  opacity: 1;
-  border: 1px solid $primary;
-  font-style: normal;
-}
-
-.rejoignez .wpcf7-file {
-  margin-top: 0.5rem;
-  width: 80%;
-}
-
-.rejoignez .wpcf7-text, .rejoignez .wpcf7-textarea {
-  width: 80%;
-}
-
-.large input, textarea {
-  width: 92.5%!important;
+  text-align:         center;
+  .title {
+    margin-top:       50px;
+    margin-bottom:    25px;
+  }
+  h2 {
+    font-weight:      bold;
+  }
+  input,
+  textarea {
+    background-color: $formulaire;
+    border-radius:    10px;
+    padding:          10px;
+    border:           none;
+  }
+  input,
+  textarea {
+    margin-top:       2rem;
+  }
+  ::placeholder {
+    font-style:       italic;
+  }
+  .wpcf7-submit {
+    background-color: white;
+    border-radius:    0px;
+    opacity:          1;
+    border:           1px solid $primary;
+    font-style:       normal;
+  }
+  .wpcf7-file {
+    margin-top:       0.5rem;
+    width:            80%;
+  }
+  .wpcf7-text,
+  .wpcf7-textarea {
+    width:            80%;
+  }
+  .large input,
+  textarea {
+    width:            92.5%!important;
+  }
 }
