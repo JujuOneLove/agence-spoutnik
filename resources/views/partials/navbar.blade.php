@@ -17,7 +17,7 @@
           @if ( !$item->menu_item_parent )
             @php ($parent_id = $item->ID)
       <li class="item">
-          <a href="{{$item->url}}" class="title">
+          <a href="{{$item->url}}" class="menu-title">
               {{$item->title}}
           </a>
       <?php endif; ?>
@@ -29,7 +29,7 @@
               <?php endif; ?>
 
                   <li class="item">
-                      <a href="<?php echo $link; ?>" class="title"><?php echo $title; ?></a>
+                      <a href="<?php echo $link; ?>" class="menu-title"><?php echo $title; ?></a>
                   </li>
 
               <?php if ( $menuitems[ $count + 1 ]->menu_item_parent != $parent_id && $submenu ): ?>
