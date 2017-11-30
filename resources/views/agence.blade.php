@@ -44,7 +44,7 @@
 
   <div class="row expanded align-middle align-center" id="EquipeContent">
 
-      <div class="small-12 medium-12 large-3 column">
+      <div class="small-12 medium-12 large-3 column fix_LeftBloc">
           <div class="agence_leftBlock">
               <h3 class="headlineBlack"> <?php the_field('agence_qui_sommes_nous'); ?> </h3>
               <div id="MgBottom"> <?php the_field('agence_sous_titre'); ?> </div>
@@ -66,7 +66,7 @@
           ?>
 
 
-              <div class="small-6 medium-6 large-4 column paddingCercle">
+              <div class="small-12 medium-6 large-4 column paddingCercle">
                   <!-- <img src="<?php echo $cercle['url']; ?>" alt="EquipePhoto" class="cercle" /> -->
                   <div style="background-image: url(<?php echo $cercle['url']; ?>)" class="cercle">
                       <p id="prezEquipeNom"><span><?php echo $prezEquipeNom ?></span></p>
@@ -90,9 +90,9 @@
   </div>
 
   <div id="statsContent">
-     <div id="grey_Square">
-       <h2 class="spoutnikC"> <?php the_field('titre_statistique') ?>  </h2>
-        <div class="row CenterGreyContent">
+    <div id="grey_Square" class="align-middle">
+      <div class="row CenterGreyContent">
+          <h2 class="spoutnikC small-12 medium-12 large-12 columns"> <?php the_field('titre_statistique') ?>  </h2>
 
           <?php
           // check if the repeater field has rows of data
@@ -105,7 +105,7 @@
                   $textStats=get_sub_field('text_stats');
           ?>
 
-        <div class="agence_statItems large-4 columns">
+        <div class="agence_statItems small-12 medium-12 large-4 columns">
           <img src="<?php echo $imgStats['url']; ?>" alt="Icons">
            <div class="stat_All">
               <p class="NumberStats"> <?php echo $chiffreStat ?> </p>
