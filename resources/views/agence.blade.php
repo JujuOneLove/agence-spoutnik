@@ -25,7 +25,7 @@
                   $text=get_sub_field('square_texte');
                   $lien=get_sub_field('square_lien');
           ?>
-            <li class='small-6 medium-4 large-3 column'> 
+            <li class='small-6 medium-4 large-4 column'> 
               <a href='<?=$lien?>' class="imgContainer effect-bubba">
                 <img src="<?php echo $img['url']; ?>" alt="backgroundImg" />
                 <p> <?php echo $text ?> </p>
