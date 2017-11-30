@@ -1,3 +1,6 @@
+.page-template-home footer{
+    display: none;
+}
 
 .backgroundhome{
     background-position:            center;
@@ -6,11 +9,10 @@
     background-repeat: no-repeat;
     background-color: $secondary;
     padding-top: 65px;
+    overflow: hidden;
+    box-shadow: inset 0 0 300px 3000px rgba($secondary, 0.2);
     
-    &:hover{
-        //transition: all ease-out 20s;
-        //background-size: 140%;
-    }
+
 
     .container_page{
         align-items:                center;
@@ -21,45 +23,60 @@
         justify-content:            center;
         position:                   relative;
 
+        .container_texte{
+            //max-width: 450px;
+            text-align: center;
+        }
+
         h1, p{
             color:                  #fff;
             font-family:            "Montserrat", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
             font-weight:            bold;
         }
+        h1{
+            transform: rotate(-2deg);
+            line-height: rem-calc(80);
+            max-width: 500px;
+        }
         h1 span{
+            max-width: 300px;
             background:             $primary;
-            padding-left:           30px;
-            padding-right:          30px;
+            padding:                3px 15px;
             text-transform:         uppercase;
         }
 
-        h1::before{
-            color:                  $primary;
-            content:                "< ";
-            font-size:              50px;
-        }
-        h1::after{
-            color:                  $primary;
-            content:                " />";
-            font-size:              50px;
-        }
+        // h1::before{
+        //     color:                  $primary;
+        //     content:                "< ";
+        //     font-size:              80px;
+        //     margin-right:20px;
+        // }
+        // h1::after{
+        //     color:                  $primary;
+        //     content:                " />";
+        //     font-size:              80px;
+        //     margin-left:20px;
+        // }
 
         p{
-            left:                   100px;
+            //left:                   100px;
             position:               relative;
-            font-size: 17px;
+            font-size: 18px;
+            font-weight: 600;
             text-align: left;
+            text-align: center;
         }
 
         .explore_button{
-            border:                 solid white 2px;   
+            border:                 solid white 1px;   
             color:                  white;
-            font-size:              25px;
-            font-weight:            450;
-            padding:                5px 20px;
+            font-size:              22px;
+            font-weight:            600;
+            padding:                10px 20px;
             position:               relative;
             top:                    70px;
-            transition: all 150ms ease-out;
+            transition:             all 150ms ease-out;
+            background-color: rgba(#FFF, 0.15);
 
             &:hover{
                 color:              $primary;
@@ -68,6 +85,17 @@
         }
     }
 }
+
+
+// @media (max-width: 1024px) {
+//     .backgroundhome{
+//         .container_page{
+//             h1 span{
+//                 max-width: 300px;
+//             }
+//         }
+//     }
+// }
 
 
 @media only screen and  (max-width: 640px) {

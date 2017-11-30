@@ -14,11 +14,11 @@
       <div class="container_page">
         <div class="container_texte"> 
           <div class="texte_accueil">
-            <p><?php echo get_field('accueil_amorce'); ?></p> 
+            <p><?= get_field('accueil_amorce'); ?></p>
             <h1>
-                <span><?php echo get_field('accueil_accroche'); ?></span>
+                <span><?= get_field('accueil_accroche'); ?></span>
             </h1>
-            <h2><?php echo get_field('accueil_texte'); ?></h2>
+            <p><?= get_field('accueil_texte'); ?></p>
           </div>
         </div>
 
