@@ -232,6 +232,7 @@
 @media (max-width: 1500px) {
     #EquipeContent {
         height: inherit;
+        padding-bottom: 50px;    
     }
 
     .agence_leftBlock {
@@ -259,14 +260,27 @@
     }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1024px) {
+    .agence_leftBlock {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .imgContainer p {
+        font-size: 1rem;
+    }
+
     .spoutnikC {
         margin-bottom: 50px;
     }
 } 
 
-@media (max-width: 1500px) {
+@media (max-width: 324px) {
     .agence_button {
         padding: 10px 15px;
+    }
+    
+    .spoutnikC {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }    
