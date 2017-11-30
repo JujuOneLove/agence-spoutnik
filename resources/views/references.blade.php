@@ -12,14 +12,14 @@
 @section('content')
 <section class>  
   <div class="reference_container">
-    <div class="filter_works"> 
-        <a href="#">Print</a>
-        <p>/</p>
-        <a href="#">Web</a>
-        <p>/</p>
-        <a href="#">Réferencement</a>
+    <div class="filter_works row"> 
+        <a href="#" class="small-12 large-3 columns">Print</a>
+        
+        <a href="#" class="small-12 large-3 columns">Web</a>
+      
+        <a href="#" class="small-12 large-3  columns">Réferencement</a>
     </div>
-    <div class="references_works">
+    <div class="references_works row">
     <?php    
         $query = new WP_Query( array( 'post_type' => 'references') );
  
@@ -29,7 +29,7 @@
                     $entryimg = get_post_thumbnail_id(); 
                     $entryimg = wp_get_attachment_image_src($entryimg,'large'); 
                 ?>
-                    <div class="entry" style='background-image:url(<?= $entryimg[0] ?>); background-position:center; background-size:cover;'>
+                    <div class="entry large-3 medium-6 small-12 columns" style='background-image:url(<?= $entryimg[0] ?>); background-position:center; background-size:cover;'>
                             <div class="container_symbol info_entry">   
                                 <div class= "symbol">+</div> 
                             </div>  
