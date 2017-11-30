@@ -275,11 +275,19 @@
     .imgContainer p {
         font-size: 1rem;
     }
-
+    
     .spoutnikC {
         margin-bottom: 50px;
     }
-} 
+
+}
+
+@media (max-width: 612px) {
+    .paddingCercle {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
 
 @media (max-width: 324px) {
     .agence_button {
