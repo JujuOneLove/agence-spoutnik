@@ -28,6 +28,7 @@
   }
   .item {
     z-index: 2;
+    transition: all 300ms;
     position: relative;
     content: '';
     background: transparent;
