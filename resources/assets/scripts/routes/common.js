@@ -2,8 +2,7 @@ import * as nav from '../components/navbar.js';
 
 export default {
   init() {
-    nav.toggleNav();
-    nav.toggleTextScroll();
+    nav.toggleBg();
     $(document).foundation();
   },
   finalize() {

@@ -10,17 +10,25 @@
   <ul class="dropdown menu" data-dropdown-menu>
     @php ($count = 0)
     @php ($submenu = false)
+    @php ($i = 0)
       @foreach($menuitems as $item)
         @php ($link = $item->url)
         @php ($title = $item->title)
         @if ( !$item->menu_item_parent )
             @php ($parent_id = $item->ID)
-    <li class="item">
+    <li class="item item-text">
         <a href="{{$item->url}}" class="menu-title">
             {{$item->title}}
         </a>
         @endif
-
+        @if($i == 1)
+        <li class="item item-img">
+            <a href="{{$item->url}}" class="menu-img">
+                <img src="{{ get_theme_file_uri() }}/dist/images/logo-ariane_white.svg" alt="logo de l'agence web ariane">
+            </a>
+        </li>
+        
+        @endif
         @if ( $parent_id == $item->menu_item_parent )
             @if(!$submenu)
               @php ($submenu = true)
@@ -38,12 +46,13 @@
         @endif
 
       @if ($menuitems[ $count + 1 ]->menu_item_parent != $parent_id)
+        @php ($i++)
     </li>                           
       @php ($submenu = false)
       @endif
 
-  @php($count++) 
-  @endforeach
+    @php($count++) 
+    @endforeach
 
   </ul>
 </nav>
