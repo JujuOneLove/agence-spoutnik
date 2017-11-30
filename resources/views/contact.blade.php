@@ -3,8 +3,8 @@
 --}}
 
 @extends('layouts.app')
-@include('partials.page-header')
 @section('content')
+@include('partials.page-header')
 <section class="contact_container">
   <div class="row">
     <div class="small-12 medium-6 large-6 columns">
