@@ -2,60 +2,161 @@
   margin: 20px 0;
   position: fixed;
   width: 100%;
-  z-index: 1;
-  background: $secondary;
+  z-index: 1000;
   margin: 0;
   top: 0;
+  &:before {
+    transition: all 300ms;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  &.active {
+    &:before {
+      background: $secondary;
+      height: 100%;
+    }
+  }
   .dropdown.menu {
     display: flex;
     justify-content: space-around;
     list-style: none;
   }
   .item {
+    z-index: 2;
+    transition: all 300ms;
     position: relative;
+    content: '';
+    background: transparent;
+    &.is-submenu-item .menu-title {
+      line-height: normal;
+    }
     a {
+      line-height: 46px;
       color: white;
     }
     &.is-active a {
       color: white!important;
     }
-    &:not(.is-dropdown-submenu-parent) {
-      .menu-title {
-        transition: all 300ms;
-        &:hover {
-          &:after {
-            width: 100%;
-          }
-        }
-        &:after {
-          transition: all 300ms;
-          content: '';
-          position: absolute;
-          bottom: 0;
-          top: 0;
-          left: 0;
-          width: 0;
-          height: 100%;
-          background: #1e193f;
-          z-index: -1;
-        }
-      }
-    }
     .js-dropdown-active {
+      max-height: 300px!important;
       .menu-title {
-        &:after {
+        line-height: normal;
+        &:before {
           top: 5px;
           left: -1px;
         }
-        &:hover:after {
+        &:hover:before {
           width: calc(100% + 2px);
         }
       }
     }
+    .menu-img {
+      transition: all 300ms;
+      width: 200px;
+    }
   }
-  .submenu {
-    background: $secondary;
-    border-color: $secondary;
+  .menu.submenu {
+    transition: all 300ms;
+    overflow: hidden;
+    display: block;
+    max-height: 0;
+    border: none;
+    padding-right: 15px;
+    .item {
+      width: calc(100% + 15px);
+    }
+    .menu-title {
+      transition: all 300ms;
+      line-height: normal;
+      position: relative;
+      white-space: nowrap;
+      &::before {
+        transition: all 300ms;
+        content: '';
+        position: absolute;
+        left: -5px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0px !important;
+        height: 0px !important;
+        border-radius: 50%;
+      }
+      &:hover {
+        transform: translateX(13px);
+        &::before {
+          width: 7px !important;
+          height: 7px !important;
+          background-color: #fff;
+        }
+      }
+      .item:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+      }
+    }
+  }
+  .is-dropdown-submenu-parent {
+    &>.menu-title {
+      transition: all 300ms;
+    }
+    .is-active {
+      &>.menu-title {
+        transition: all 300ms;
+        background-color: #1e193f;
+      }
+    }
+  }
+  &.active {
+    // active (après le header)
+    .item-text {
+      .menu-title {
+        transition: all 300ms;
+      }
+    }
+    .menu.submenu {
+      background: $secondary;
+      border-color: $secondary;
+      .item {
+        &:hover {
+          background-color: #1e193f;
+        }
+      }
+    }
+    .item-text:not(.is-dropdown-submenu-parent) {
+      transition: all 300ms;
+      &:hover{
+        background-color: #1e193f;
+      }
+    }
+  }
+  &:not(.active) {
+    //not(active) (avant le header)
+    .menu.submenu {
+      margin-top: -27px;
+      background: transparent;
+      border-color: transparent;
+      .item {
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.4);
+        }
+      }
+    }
+    .menu-img {
+      width: 300px;
+    }
+    .menu.js-dropdown-active {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    .is-dropdown-submenu-parent.is-active {
+      &>.menu-title {
+        transition: all 300ms;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
   }
   .dropdown.menu>li.is-dropdown-submenu-parent>a::after {
     border-color: white transparent transparent;

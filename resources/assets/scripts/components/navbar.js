@@ -1,28 +1,21 @@
 /* eslint-disable */
-export function toggleNav() {
-  let trigger      = $("body").find('[data-target]'),
-      classTrigger = $(trigger).attr('data-target');
 
-  $(trigger).click(function (e) {
-    e.preventDefault();
-    let target = $(this).parents('.' + classTrigger);
-
-    $(target).toggleClass('open');
-    $('body').toggleClass('overflow-hidden');
-  });
+export function toggleBg() {
+  let $window     = $(window),
+      nav         = $('.main_nav'),
+      navHeight   = 50,
+      botOfHeader = $('.page-header__titre').position().top + $('.page-header__titre').outerHeight(true);
+  
+  if ($window.scrollTop() > botOfHeader - navHeight) { toogle($window, nav, navHeight, botOfHeader) }
+  $window.scroll(() => toogle($window, nav, navHeight, botOfHeader));
 }
 
-export function toggleTextScroll() {
-  let $window   = $(window),
-      logo_text = $('.navigation_navbar-normal .logo-text-container');
-
-  $window.scroll(function () {
-    if ($window.scrollTop() > 50) {
-      if (!logo_text.hasClass('hidden'))
-        logo_text.addClass('hidden');
-    } else {
-      if (logo_text.hasClass('hidden'))
-        logo_text.removeClass('hidden');
-    }
-  });
+function toogle($window, nav, navHeight, botOfHeader) {
+  if ($window.scrollTop() > botOfHeader - navHeight) {
+    if (!nav.hasClass('active'))
+      nav.addClass('active');
+  } else {
+    if (nav.hasClass('active'))
+      nav.removeClass('active');
+  }
 }
