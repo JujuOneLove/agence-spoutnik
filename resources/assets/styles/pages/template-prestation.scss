@@ -1,0 +1,22 @@
+.contenu-prestation{
+    padding: 25px 15px;
+    .reverse{
+        flex-direction: row-reverse;
+    }
+
+    &__image{
+        padding: 25px 0;
+        text-align: center;
+        img{
+            width: 60%;
+        }
+    }
+    &__texte{
+        h2{
+            font-weight: bold;
+            color: $primary;
+        }
+        padding: 25px 0;
+    }
+
+}
