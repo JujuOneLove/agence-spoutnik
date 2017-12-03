@@ -1,3 +1,7 @@
+{{--
+ Template Name: 404
+--}}
+
 @extends('layouts.app')
 
 @section('content')
