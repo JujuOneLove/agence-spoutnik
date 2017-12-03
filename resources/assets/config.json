@@ -8,8 +8,8 @@
   "./scripts/customizer.js"
   ]
   },
-  "publicPath": "/wp-content/themes/spoutnik",
-  "devUrl": "http://localhost:8888/spoutnik",
+  "publicPath": "/wp-content/themes/agence-spoutnik",
+  "devUrl": "http://localhost/spoutnik",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
