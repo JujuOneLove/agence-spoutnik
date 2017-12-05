@@ -24,9 +24,11 @@
         $query = new WP_Query( array( 'post_type' => 'references') );
     ?>        
 
-       
+    <div>      
     <ul class='references_works row expanded'>
-    <?php 
+   
+        
+        <?php 
         if ( $query->have_posts() ) : ?>
         <?php while ( $query->have_posts() ) : $query->the_post(); ?>	
         <?php
@@ -37,7 +39,10 @@
             foreach ( $terms as $term ){$x .= ' tag-'.$term;}
 
 
-            $o = '<li class="entry large-3 medium-6 small-12 columns '.$x.'" style="background-image:url('.$entryimg[0].'); background-position:center; background-size:cover;"><div class="container_symbol info_entry"><div class="symbol">+</div> </div><div class="container_title info_entry"><h3 class="title"><a href="'.get_permalink().'">'.get_the_title().'</a></h3></div></li>';
+            $o = '<li class="entry large-3 medium-6 small-12 columns '.$x.'" style="background-image:url('.$entryimg[0].'); background-position:center; background-size:cover;">
+            <div class="container_symbol info_entry"><div class="symbol">+</div> </div>
+            
+            <div class="container_title info_entry"><h3 class="title"><a href="'.get_permalink().'">'.get_the_title().'</a></h3></div></li>';
 
             if(isset($_GET['real'])){
                 if(stristr($x, $_GET['real']) === FALSE){} else{
