@@ -1,12 +1,7 @@
 {{--
-<<<<<<< HEAD
   Template Name: 404
 --}}
-=======
- Template Name: 404
---}}
 
->>>>>>> 096c1f919e745e7b779cf15f87f67519c9164321
 @extends('layouts.app')
 
 <?php
