@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="mention_footer">
-        <p>Agence Spoutnik | Mentions Légales | Plan du site</p>
+        <p>Agence Ariane | Mentions Légales | Plan du site</p>
       </div>
     </div>
   </div>
