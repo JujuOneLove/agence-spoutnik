@@ -28,4 +28,15 @@
 
       </div>
   </section>
+  <section class="home__contenu" >
+    <div class="row">
+      <div class="small-12 column">
+        <?php if (have_posts()) : ?>
+          <?php while (have_posts()) : the_post(); ?>
+            <?php the_content(); ?>
+          <?php endwhile; ?>
+        <?php endif; ?>
+      </div>
+    </div>
+  </section>
 @endsection

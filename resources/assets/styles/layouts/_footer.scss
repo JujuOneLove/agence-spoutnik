@@ -54,10 +54,14 @@ footer p {
 .mention_footer{
   margin-top: 25px;
   background-color: $primary;
-  color: black;
   text-transform: none;
   text-align: center;
-  padding: 5px 0px;
+  padding: 5px 0px 3px 0;
+  color: black;
+
+  a{
+    color: black;
+  }
 }
 
 .mention_footer p{

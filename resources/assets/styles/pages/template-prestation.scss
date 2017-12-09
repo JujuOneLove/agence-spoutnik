@@ -5,9 +5,9 @@
     }
 
     &__image{
-        padding: 25px 0;
+        padding: 50px 0;
         text-align: center;
-        img{
+        img, svg{
             width: 60%;
         }
     }
@@ -15,8 +15,25 @@
         h2{
             font-weight: bold;
             color: $primary;
+            font-size: 23px;
+            border-bottom: 4px solid $primary;
+            display: inline-block;
         }
         padding: 25px 0;
+
+        font-size: 15px;
+        line-height: 24px;
+        strong{
+            font-size: 15px;
+            line-height: 24px;
+            //font-weight: 500;
+            color:$primary;
+        }
+        a{
+            color:darken($primary,10%);
+            text-decoration: underline;
+        }
+
     }
 
 }

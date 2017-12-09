@@ -1,4 +1,4 @@
-.page-template-home footer{
+.page-template-home .container{
     display: none;
 }
 
@@ -88,6 +88,26 @@
     }
 }
 
+.home__contenu{
+    padding: 50px 0;
+    
+    h2{
+        font-weight: bold;
+        color: $primary;
+        font-size: 23px;
+        border-bottom: 4px solid $primary;
+        display: inline-block;
+    }
+
+    font-size: 15px;
+    line-height: 24px;
+    strong{
+        font-size: 15px;
+        line-height: 24px;
+        //font-weight: 500;
+        color:$primary;
+    }
+}
 
 // @media (max-width: 1024px) {
 //     .backgroundhome{

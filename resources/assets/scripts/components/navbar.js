@@ -4,7 +4,7 @@ export function toggleBg() {
   if ($('.page-header__titre').length) {
     let $window     = $(window),
         nav         = $('.main_nav'),
-        navHeight   = 50,
+        navHeight   = 100,
         botOfHeader = $('.page-header__titre').position().top + $('.page-header__titre').outerHeight(true);
     if ($window.scrollTop() > botOfHeader - navHeight) { toggle($window, nav, navHeight, botOfHeader) }
     $window.scroll(() => toggle($window, nav, navHeight, botOfHeader));
