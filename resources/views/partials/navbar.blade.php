@@ -27,7 +27,7 @@
                 <img src="{{ get_theme_file_uri() }}/dist/images/logo-ariane_white.svg" alt="logo de l'agence web ariane">
             </a>
         </li>
-        
+
         @endif
         @if ( $parent_id == $item->menu_item_parent )
             @if(!$submenu)
@@ -47,11 +47,11 @@
 
       @if ($menuitems[ $count + 1 ]->menu_item_parent != $parent_id)
         @php ($i++)
-    </li>                           
+    </li>
       @php ($submenu = false)
       @endif
 
-    @php($count++) 
+    @php($count++)
     @endforeach
 
   </ul>

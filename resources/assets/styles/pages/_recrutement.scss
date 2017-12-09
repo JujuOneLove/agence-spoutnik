@@ -25,19 +25,77 @@
     background-color: white;
     border-radius:    0px;
     opacity:          1;
-    border:           1px solid $primary;
+    border:           1px solid $formulaire;
     font-style:       normal;
+    margin-top:       0;
+    margin-bottom:    20px;
+  }
+  .wpcf7-submit:hover {
+    background-color: $formulaire;
+    transition: all 0.3s ease-in-out;
+    color: grey;
   }
   .wpcf7-file {
     margin-top:       0.5rem;
-    width:            80%;
+    width:            90%;
+    margin-left:      -60px;
   }
   .wpcf7-text,
   .wpcf7-textarea {
-    width:            80%;
+    width:            90%;
   }
   .large input,
   textarea {
-    width:            92.5%!important;
+    width:            97.5%!important;
+    margin-left:      -15px;
+  }
+}
+
+@media screen and (max-width:1368px) {
+  .rejoignez  {
+    .wpcf7-text {
+      margin-left: 20px;
+    }
+    .wpcf7-file {
+      margin-left: -10px;
+    }
+    .wpcf7-textarea,
+    .large input {
+      margin-left: 3px;
+    }
+  }
+}
+
+@media screen and (max-width:640px){
+  .rejoignez  {
+    .wpcf7-text,
+    .wpcf7-file {
+       margin-left: 80px;
+    }
+    .wpcf7-textarea,
+    .large input {
+      width: 75%!important;
+      margin-left: 60px;
+    }
+    p {
+      margin: 0 20px 0 20px;
+    }
+  }
+}
+
+@media screen and (max-width:580px){
+  .rejoignez  {
+    .wpcf7-text,
+    .wpcf7-file {
+       margin-left: 30px;
+    }
+    .wpcf7-textarea,
+    .large input {
+      width: 75%!important;
+      margin-left: 20px;
+    }
+    p {
+      margin: 0 20px 0 20px;
+    }
   }
 }
