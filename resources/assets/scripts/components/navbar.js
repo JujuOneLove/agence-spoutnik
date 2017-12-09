@@ -1,17 +1,17 @@
 /* eslint-disable */
 
 export function toggleBg() {
-  if ($('.page-header__titre').length != undefined) {
+  if ($('.page-header__titre').length) {
     let $window     = $(window),
         nav         = $('.main_nav'),
         navHeight   = 50,
         botOfHeader = $('.page-header__titre').position().top + $('.page-header__titre').outerHeight(true);
-    if ($window.scrollTop() > botOfHeader - navHeight) { toogle($window, nav, navHeight, botOfHeader) }
-    $window.scroll(() => toogle($window, nav, navHeight, botOfHeader));
+    if ($window.scrollTop() > botOfHeader - navHeight) { toggle($window, nav, navHeight, botOfHeader) }
+    $window.scroll(() => toggle($window, nav, navHeight, botOfHeader));
   }
 }
 
-function toogle($window, nav, navHeight, botOfHeader) {
+function toggle($window, nav, navHeight, botOfHeader) {
   if ($window.scrollTop() > botOfHeader - navHeight) {
     if (!nav.hasClass('active'))
       nav.addClass('active');
