@@ -30,7 +30,8 @@
                 <h2><a href='$lien'> <?php echo $text ?> </a></h2>
                 <figcaption> 
                 </figcaption>
-                <img src="<?php echo $img['url']; ?>" alt="backgroundImg" />
+                <!-- <img src="<?php// echo $img['url']; ?>" alt="backgroundImg" /> -->
+                <div style="background-image: url(<?php echo $img['url']; ?>)" class="imgSquare"> </div>
               </div>
             </li>
           <?php
