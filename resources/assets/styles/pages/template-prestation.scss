@@ -3,7 +3,13 @@
     .reverse{
         flex-direction: row-reverse;
     }
-
+    &.references{
+        .contenu-prestation__image{
+            img, svg{
+                width: 90%;
+            }
+        }
+    }
     &__image{
         padding: 50px 0;
         text-align: center;
