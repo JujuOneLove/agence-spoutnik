@@ -5,6 +5,7 @@
   z-index: 1000;
   margin: 0;
   top: 0;
+
   &:before {
     transition: all 300ms;
     content: '';
@@ -15,17 +16,20 @@
     right: 0;
     left: 0;
   }
+
   &.active {
     &:before {
       background: $secondary;
       height: 100%;
     }
   }
+
   .dropdown.menu {
     display: flex;
     justify-content: space-around;
     list-style: none;
   }
+
   .item {
     z-index: 2;
     transition: all 300ms;
