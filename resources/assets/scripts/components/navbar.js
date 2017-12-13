@@ -11,6 +11,11 @@ export function toggleBg() {
   }
 }
 
+export function responsiveNav() {
+  $('#navMain').toggleClass('open');
+}
+
+
 function toggle($window, nav, navHeight, botOfHeader) {
   if ($window.scrollTop() > botOfHeader - navHeight) {
     if (!nav.hasClass('active'))

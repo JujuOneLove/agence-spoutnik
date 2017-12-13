@@ -6,8 +6,14 @@
 ?>
 
 @if(!is_front_page())
+
 <nav class="{{$menu_name}}">
-  <ul class="dropdown menu" data-dropdown-menu>
+
+<div class="title-bar responsive">
+  <button class="menu-icon" type="button" id="toggle-nav"></button>
+</div>
+
+  <ul class="dropdown menu" data-dropdown-menu id="navMain">
     @php ($count = 0)
     @php ($submenu = false)
     @php ($i = 0)
