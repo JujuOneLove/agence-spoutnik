@@ -10,6 +10,27 @@
   margin: 50px;
 }
 
+.explication{
+  
+  h2{
+      font-weight: bold;
+      color: $primary;
+      font-size: 23px;
+      border-bottom: 4px solid $primary;
+      display: inline-block;
+  }
+
+  font-size: 15px;
+  line-height: 24px;
+  
+  strong{
+      font-size: 15px;
+      line-height: 24px;
+      //font-weight: 500;
+      color:$primary;
+  }
+}
+
 .info img{
   width: 30px;
   float: left;

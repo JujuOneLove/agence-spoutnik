@@ -15,7 +15,6 @@
         <h2 class="small-12 large-3 columns <?php if($_GET['real']=='print'){echo 'active';} ?>"><a href='<?= get_permalink()?>?real=print'>Identité Graphique</a></h2>
         <h2 class="small-12 large-3 columns <?php if($_GET['real']=='web'){echo 'active';} ?>"><a href='<?= get_permalink()?>?real=web'>Réalisation Web</a></h2>   
         <h2 class="small-12 large-3 columns <?php if($_GET['real']=='referencement'){echo 'active';} ?>"><a href='<?= get_permalink()?>?real=referencement'>Réferencement</a></h2>
-
     
     </div>
     
