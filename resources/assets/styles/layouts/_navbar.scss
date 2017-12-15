@@ -22,6 +22,9 @@
       background: $secondary;
       height: 100%;
     }
+    .responsive{
+      background-color: $secondary;
+    }
   }
 
   .dropdown.menu {
@@ -132,7 +135,7 @@
     }
     .item-text:not(.is-dropdown-submenu-parent) {
       transition: all 300ms;
-      &:hover{
+      &:hover {
         background-color: #1e193f;
       }
     }
@@ -164,5 +167,48 @@
   }
   .dropdown.menu>li.is-dropdown-submenu-parent>a::after {
     border-color: white transparent transparent;
+  }
+}
+
+.responsive {
+  display: none;
+  background-color: transparent;
+}
+
+
+// OUI LA FLEMME DE FAIRE DU BEAU CODE
+@media screen and (max-width: 991px) {
+  .responsive {
+    display: block;
+  }
+  #navMain {
+    display: none;
+  }
+  #navMain.open{
+    display: flex;
+    flex-direction: column;
+  }
+  .main_nav .item a{
+    line-height: normal;
+  }
+  .item-img{
+    order: -1;
+    a {
+      margin: 0 auto;
+      width: 180px!important;
+      margin-top: -40px;
+    }
+  }
+  .dropdown.menu>li.opens-right>.is-dropdown-submenu{
+    top: 41px;
+    right: 0;
+    left: auto;
+    margin-top: 0;
+  }
+  li.item.item-text.is-dropdown-submenu-parent.opens-right{
+    width: 100%;
+  }
+  .item.item-text{
+    width: 40%;
   }
 }
