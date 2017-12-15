@@ -29,7 +29,7 @@
         @endif
         @if($i == 1)
         <li class="item item-img">
-            <a href="{{$item->url}}" class="menu-img">
+            <a href="https://agence-ariane.fr" class="menu-img">
                 <img src="{{ get_theme_file_uri() }}/dist/images/logo-ariane_white.svg" alt="logo de l'agence web ariane">
             </a>
         </li>

@@ -52,9 +52,8 @@ footer p {
 }
 
 .mention_footer{
-  margin-top: 25px;
   background-color: $secondary;
-  color: #FFF;
+  color: #FFF!important;
   text-transform: none;
   text-align: center;
   padding: 5px 0px 3px 0;

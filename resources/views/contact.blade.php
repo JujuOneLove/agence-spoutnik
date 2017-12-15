@@ -38,7 +38,7 @@
     </div>
   </div>
   <div class="map">
-    <iframe width="100%" height="40%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBgp8Uwj0-NaCTuC6R1_gKcp5uHlPcyIYs&q=Arras+France" allowfullscreen></iframe>
+    <iframe width="100%" height="500px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBgp8Uwj0-NaCTuC6R1_gKcp5uHlPcyIYs&q=Arras+France" allowfullscreen></iframe>
   </div>
 
 </section>

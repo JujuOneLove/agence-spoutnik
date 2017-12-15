@@ -7,16 +7,21 @@
   h2 {
     font-weight:      bold;
   }
+
+  .rejoigneznous_container{
+    padding: 0px 0 50px 0;
+  }
+
   input,
   textarea {
-    background-color: $formulaire;
-    border-radius:    10px;
-    padding:          10px;
-    border:           none;
+    // background-color: $formulaire;
+    // border-radius:    10px;
+    // padding:          10px;
+    // border:           none;
   }
   input,
   textarea {
-    margin-top:       2rem;
+    // margin-top:       2rem;
   }
   ::placeholder {
     font-style:       italic;
